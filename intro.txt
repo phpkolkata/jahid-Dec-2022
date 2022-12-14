@@ -1,0 +1,48 @@
+Web Development - (web designing) + (web programming)
+
+Web designing:
+    1. HTML
+    2. CSS
+    3. Bootstrap (framework of css)
+    4. Javascript (DOM level)
+    5. Jquery  (framework of Javascript)
+
+Web programming:
+    1. PHP
+    2. Mysql
+    3. Laravel  (framework of PHP)
+
+ ---------------------------------------------------
+
+ phpkolkata.com - > website load
+
+ hard disk partision - c:,d:(raj),e:(jahid)
+-----------------
+hosting = open space disk over internet
+IP - 127.0.0.1 -> phpkolkata.com (domain) have to purchase for 1 yr
+
+Protocols:
+---------
+    http - hyper text transfer Protocol
+    https - hyper text transfer Protocol Secure (ssl)
+    ftp - file transfer Protocol
+    smtp - simple mail transfer Protocol
+
+
+Client & server:
+---------------
+
+Server: the software which compiles and provides data to its client (browser) 
+Client: the software which consumes the data provided by server (apache)
+
+---------------------------------------
+Why should we learn php? (ver: 4,5,7,8)
+1. Open Source
+2. easy learning/resources
+3. cheap building and maintaining cost
+4. apache server (free)
+5. mysql db (free)
+6. LAMP technology stacks (Linux, Apache, Mysql, PHP)
+-----------------------
+
+html, css, Bootstrap,  js, jquery
