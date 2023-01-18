@@ -11,17 +11,22 @@ Web programming:
     1. PHP
     2. Mysql
     3. Laravel  (framework of PHP)
-
- ---------------------------------------------------
+ ----------------------------------------------------
 
  phpkolkata.com - > website load
 
- hard disk partision - c:,d:(raj),e:(jahid)
------------------
+ Hosting(space, HD) + Domain(name of the website) - Yearly Renewal
+
+ --------------------
+hard disk partision - c: d:(jamirul) e:(jahid) f:(rajdeep)
+
+ip address: 127.0.0.1 ->(DNS - Domain Name Server)-> domain label (phpkolkata.com)
+---------------
 hosting = open space disk over internet
 IP - 127.0.0.1 -> phpkolkata.com (domain) have to purchase for 1 yr
+-------------------------------
 
-Protocols:
+Protocols (pipline):
 ---------
     http - hyper text transfer Protocol
     https - hyper text transfer Protocol Secure (ssl)
@@ -32,12 +37,12 @@ Protocols:
 Client & server:
 ---------------
 
-Server: the software which compiles and provides data to its client (browser) 
-Client: the software which consumes the data provided by server (apache)
+Server: the software which compiles and provides data to its client (apache) 
+Client: the software which consumes the data provided by server  (browser)
 
 ---------------------------------------
-Why should we learn php? (ver: 4,5,7,8)
-1. Open Source
+Why should we learn php? (ver: 4,5,7,8, 8.2)
+1. Open Source (free)
 2. easy learning/resources
 3. cheap building and maintaining cost
 4. apache server (free)
@@ -45,4 +50,5 @@ Why should we learn php? (ver: 4,5,7,8)
 6. LAMP technology stacks (Linux, Apache, Mysql, PHP)
 -----------------------
 
+Client Side (browser side):
 html, css, Bootstrap,  js, jquery
