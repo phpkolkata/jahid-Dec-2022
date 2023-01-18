@@ -1,4 +1,4 @@
-Web Development - (web designing) + (web programming)
+Web Development technology - (web designing) + (web programming)
 
 Web designing:
     1. HTML
