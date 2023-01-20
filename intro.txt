@@ -1,13 +1,13 @@
 Web Development technology - (web designing) + (web programming)
 
-Web designing:
+Web designing: (Client Side)
     1. HTML
     2. CSS
     3. Bootstrap (framework of css)
     4. Javascript (DOM level)
     5. Jquery  (framework of Javascript)
 
-Web programming:
+Web programming: (Server Side)
     1. PHP
     2. Mysql
     3. Laravel  (framework of PHP)
