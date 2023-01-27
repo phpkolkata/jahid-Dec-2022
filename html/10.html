@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="1.php">
+    Name:<input type="text" required minlength="4"><br>
+    Gender: Male<input type="radio" name="gender"> Female<input type="radio" name="gender"><br>
+    Age: <input type="number" required max="100" min="18"><br>
+    email: <input type="email"><br>
+    DOB:<input type="date"><br>
+    Pic:<input type="file"><br>
+    Hobbies: reading <input type="checkbox" name="hobbies">
+            cooking <input type="checkbox" name="hobbies">
+            playing <input type="checkbox" name="hobbies">
+            movie <input type="checkbox" name="hobbies">
+            <br>
+    City: <select required>
+        <option value="">select one</option>
+        <option>kolkata</option>
+        <option>howrah</option>
+        <option>delhi</option>
+        <option>pune</option>
+    </select>
+<br>
+    <!-- submit button, automatically syn with form action -->
+<button type="submit">Register</button>
+
+<!-- normale button needs progamming to work -->
+<button type="button">normal button</button>
+
+</form>
+
+
+</body>
+</html>
