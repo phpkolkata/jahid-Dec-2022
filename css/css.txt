@@ -1,0 +1,40 @@
+color:#f00
+font-size:12px
+font-family:ariel, verdana, tahoma, times new roman
+font-weight:bold
+font-style:italic
+background:#f00
+background-image:url("1.jpg")
+height:100px
+width:200px
+overflow:auto 
+display:none / block (default)
+border-radius:10px
+
+float:left / right 
+clear:both 
+
+margin:10px //outer space
+margin-left:
+margin-right
+margin-top
+margin-bottom
+
+padding:10px // inner space
+padding-left
+padding-right
+padding-top
+padding-bottom
+
+border:1px dashed #f00
+border-left
+border-right
+border-top
+border-bottom
+
+R  G  B
+f  0  0 red #ff0000 #f00
+0  f  0 green
+0  0  f blue
+0  0  0 black
+f  f  f white
