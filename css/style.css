@@ -48,14 +48,14 @@
       }
 
       /* by tag/element */
-      /* b{
+      b{
         font-size: 40px;
-      } */
+      }
 
       /* by reference  */
-      /* div > b {
+      div > b {
         font-size: 40px;
-      } */
+      }
       /* .bgGreen > b {
         font-size: 40px;
       } */
@@ -63,7 +63,7 @@
         font-size: 40px;
       } */
 
-       .bgGreen  b {
+       div  b {
         font-size: 40px;
       }
 
