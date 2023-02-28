@@ -32,6 +32,8 @@ border-right
 border-top
 border-bottom
 
+box-sizing: border-box;
+
 R  G  B
 f  0  0 red #ff0000 #f00
 0  f  0 green
