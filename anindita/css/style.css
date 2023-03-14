@@ -1,0 +1,32 @@
+.fRight {
+        float: right;
+      }
+      .fLeft {
+        float: left;
+      }
+      .bgYellow {
+        background-color: yellow;
+      }
+      .bgRed {
+        background-color: red;
+      }
+      .w-50 {
+        width: 49%;
+      }
+      .w-100 {
+        width: 100%;
+      }
+      .bdr {
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      .p10{
+        padding:10px;
+      }
+      .box{
+        width:100px;
+        height: 100px;
+        background-color: blue;
+        margin-left: 50px;
+        margin: 20px;
+      }
