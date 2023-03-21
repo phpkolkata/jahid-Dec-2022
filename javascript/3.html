@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        function hello(){
+            var nm = document.getElementById("nm"); //<input type="text" id="nm">
+            var age = document.getElementById("age"); //<input type="text" id="age">
+
+            alert("hello "+nm.value+", Your age is "+age.value);
+        }
+    </script>
+</head>
+<body>
+
+    Name:<input type="text" id="nm"><br>
+    Age: <input type="text" id="age"><br>
+    <button onclick="hello()">Submit</button>
+
+    
+</body>
+</html>

@@ -1,0 +1,10 @@
+- Javscript is Client(browser) side Scripting Language
+- Javascript can control any element inside the BODY tag, ex: b,i,u,table,input,img,div,p,ul,span,button, etc....
+- can Control elements means - it can set or get any attribute of any element.
+    ex:
+    <img src="1.jg" border="2" height="400" width="400">
+
+    in above example, img tag is an element here, and "src,border,height,width" they are all attribute/properties.
+    Javascript, can control (set/get) these above attribute/properties.
+
+    Javascript runs upon DOM (Document Object Modeling) (page element tree structure)

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayHello(){
+            var nm = document.getElementById("nm");
+            // example of settig the value
+            nm.value = "kolkata";
+            nm.type = "checkbox";
+
+            // example of getting the value
+            alert("hello "+nm.value);
+        }
+    </script>
+</head>
+<body>
+    Name:<input type="text" value="" id="nm"><br>
+    <button onclick="sayHello()">click</button>
+</body>
+</html>
