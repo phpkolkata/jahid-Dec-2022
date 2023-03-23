@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        function sayHello(){
+            
+            var nm = document.getElementById("nm");
+            var age = document.getElementById("age");
+
+            var uname = nm.value;
+            var uage = age.value;
+
+            // alert(uname.length);
+
+            if(uname == ""){
+                alert("Please enter your name first");
+            }
+            else if(uname.length < 3){
+                alert("Please enter your name above 3 character.")
+            }
+            else if(uage == ""){
+                alert("Please enter your age first");
+            }
+            else{
+                // alert("Hello "+ uname +", your age is "+uage);
+                alert(`Hello ${uname} your age is ${uage}`);
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    
+Name:<input type="text" id="nm" value=""> (required, character 3-10)
+<br>
+Age:<input type="text" id="age"> (required, limit 18-50)
+
+<br>
+<button onclick="sayHello()">Validate</button>
+
+</body>
+</html>

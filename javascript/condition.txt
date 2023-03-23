@@ -1,0 +1,28 @@
+
+--single condtional statement
+if(condition is true){
+    then run this line
+}
+
+-- double condtional statement
+if(conditin is true/false){
+    if true, then run this
+}
+else{
+    if above false then run this
+}
+
+-- multiple conditional statement
+if(conditoin){
+
+}
+else if(conditon){
+
+}
+else if(condition){
+
+}
+...
+else{
+
+}
