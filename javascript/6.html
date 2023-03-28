@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        function sayHello(){
+            
+            var nm = document.getElementById("nm");
+            var age = document.getElementById("age");
+            var male = document.getElementById("male");
+            var female = document.getElementById("female");
+            var city = document.getElementById("city");
+
+            var uname = nm.value;
+            var uage = age.value;
+
+            // alert(female.checked);
+            // alert(city.value);
+
+
+            if(uname == ""){
+                alert("Please enter your name first");
+            }
+            else if(uname.length < 3){
+                alert("Please enter your name above 3 character.")
+            }
+            else if(uage == ""){
+                alert("Please enter your age first");
+            }
+            // && (AND)- both condition must be true
+            // || (OR)- any one condition true will do 
+            else if(male.checked == false && female.checked ==  false){
+                alert("Please select your gender");
+            }
+            else if(city.value == ""){
+                alert("Please select city");
+            }
+            else{
+                // alert("Hello "+ uname +", your age is "+uage);
+                // alert(`Hello ${uname} your age is ${uage}`);
+                alert("Thank You! Your form has been submitted.");
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    
+Name:<input type="text" id="nm" value=""> (required, character 3-10)
+<br>
+Age:<input type="text" id="age"> (required, limit 18-50)
+<br>
+Gender: male <input type="radio" name="gender" id="male" value="m">
+         female <input type="radio" name="gender" id="female" value="f">
+
+<br>
+City: <select id="city">
+    <option value="">Select city...</option>
+    <option value="hwh">Howrah</option>
+    <option value="kol">Kolkata</option>
+    <option value="pun">Pune</option>
+</select>
+<br>
+Hobbies: reading <input type="checkbox" value="reading">
+         cooking <input type="checkbox" value="cooking">
+         cricket <input type="checkbox" value="cricket">
+         movies  <input type="checkbox" value="movies">
+<br>
+<button onclick="sayHello()">Validate</button>
+
+</body>
+</html>
