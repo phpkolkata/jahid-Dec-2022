@@ -14,6 +14,11 @@
             var female = document.getElementById("female");
             var city = document.getElementById("city");
 
+            var read = document.getElementById("read");
+            var cook = document.getElementById("cook");
+            var cric = document.getElementById("cric");
+            var movi = document.getElementById("movi");
+
             var uname = nm.value;
             var uage = age.value;
 
@@ -37,6 +42,9 @@
             }
             else if(city.value == ""){
                 alert("Please select city");
+            }
+            else if(read.checked == false && cook.checked == false && cric.checked == false && movi.checked == false){
+                alert("please enter your hobbi");
             }
             else{
                 // alert("Hello "+ uname +", your age is "+uage);
@@ -64,10 +72,10 @@ City: <select id="city">
     <option value="pun">Pune</option>
 </select>
 <br>
-Hobbies: reading <input type="checkbox" value="reading">
-         cooking <input type="checkbox" value="cooking">
-         cricket <input type="checkbox" value="cricket">
-         movies  <input type="checkbox" value="movies">
+Hobbies: reading <input type="checkbox" value="reading" id="read">
+         cooking <input type="checkbox" value="cooking" id="cook">
+         cricket <input type="checkbox" value="cricket" id="cric">
+         movies  <input type="checkbox" value="movies" id="movi">
 <br>
 <button onclick="sayHello()">Validate</button>
 
