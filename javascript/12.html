@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+
+    <script>
+      function chColor(clr) {
+        var box = document.getElementById("box");
+        box.style.color = clr;
+        box.style.backgroundColor="yellow";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="w-50 card shadow mx-auto mt-5 p-5">
+        <textarea cols="20" rows="10"  id="box">
+      hello india this is my test with javascript and css and i m learning with
+      fun, lots to learn though hello india this is my test with javascript and
+      css and i m learning with fun, lots to learn though hello india this is my
+      test with javascript and css and i m learning with fun, lots to learn
+      though hello india this is my test with javascript and css and i m
+      learning with fun, lots to learn though hello india this is my test with
+      javascript and css and i m learning with fun, lots to learn though hello
+      india this is my test with javascript and css and i m learning with fun,
+      lots to learn though
+      </textarea>
+    </div>
+
+    <div id="box" class="w-50  mx-auto mt-4 p-2 text-center">
+      <div>
+        <button onclick="chColor('red')" class="btn btn-danger">red</button>
+        <button onclick="chColor('green')" class="btn btn-success">green</button>
+        <button onclick="chColor('blue')" class="btn btn-primary">blue</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+small case = hello india
+upper case = HELLO INDIA
+camel case = helloIndia
+snake case = hello_india
+pascal case = HelloIndia
