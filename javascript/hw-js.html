@@ -12,17 +12,92 @@
       crossorigin="anonymous"
     />
     <script lang="javascript">
+      function apply(){
         
+        var box = document.getElementById("box");
+        // fontColor
+        var fblue = document.getElementById("fblue");
+        var fgreen = document.getElementById("fgreen");
+        var fred = document.getElementById("fred");
+        //  BgColor
+        var bgColor = document.getElementById("bgColor");
+
+        // fontStyle
+        var b = document.getElementById("b");
+        var i = document.getElementById("i");
+        var u = document.getElementById("u");
+
+        // fontSize
+        var fSize = document.getElementById("fSize");
+
+        // local vars
+        var fColor = "black";
+        var bg = "white";
+        var bold = "";
+        var italic = "";
+        var underline = "";
+        var fontSize = "16px";
+
+        // font color color selection
+        if(fblue.checked){
+          fColor = fblue.value;
+          // fColor = "blue";
+        }
+        else if(fred.checked){
+          fColor = fred.value;
+        }
+        else if(fgreen.checked){
+          fColor = fgreen.value;
+        }
+
+        // bgColor Selection
+        if(bgColor.value != ""){
+          bg = bgColor.value;
+        }
+
+        // styleing
+        if(b.checked){
+          bold = "bold";
+        }
+        if(i.checked){
+          italic = "italic";
+        }
+        if (u.checked){
+          underline =  "underline";
+        }
+
+        // font size
+        if(fSize.value != ""){
+          fontSize = fSize.value;
+        }
+
+
+// Applying local variable
+        box.style.color = fColor;
+        box.style.background = bg;
+        box.style.fontWeight = bold;
+        box.style.fontStyle = italic;
+        box.style.textDecoration = underline;
+        box.style.fontSize = fontSize;
+
+      }
+
+      function hide(){
+        var box = document.getElementById("box");
+        box.style.display = "none";
+      }
+      function show(){
+        var box = document.getElementById("box");
+        box.style.display = "block";
+      }
     </script>
   </head>
   <body>
     <!-- hw: simple web editor -->
-    <div
-      id="box"
-      class="w-50 mx-auto shadow card p-4 m-4"
-      style="display: block"
-    >
-    <textarea rows="10" cols="70">
+    <div class="w-50 mx-auto shadow card p-4 m-4" style="display: block">
+      <button class="btn btn-primary" onclick="hide()">Hide</button>
+      <button class="btn btn-info" onclick="show()">Show</button>
+      <textarea rows="10" cols="70" id="box">
       This is my test data, A quick brown fox jumps over little lazy dog. This
       is my test data, A quick brown fox jumps over little lazy dog. This is my
       test data, A quick brown fox jumps over little lazy dog. This is my test
@@ -34,30 +109,32 @@
       jumps over little lazy dog.
       </textarea>
     </div>
+
     <div class="w-50 mx-auto">
-      Font Color: <br>
-      <input type="radio" value=""> Red<br>
-      <input type="radio" value=""> Green<br>
-      <input type="radio" value=""> Blue<br>
-      <hr>
-      BackGround:<br>
-      <select>
-        <option>select</option>
+      Font Color: <br />
+      <input type="radio" name="bgColor" value="red" id="fred" /> Red<br />
+      <input type="radio" name="bgColor" value="green" id="fgreen" />
+      Green<br />
+      <input type="radio" name="bgColor" value="blue" id="fblue" /> Blue<br />
+      <hr />
+      BackGround:<br />
+      <select id="bgColor">
+        <option value="">select</option>
         <option>Red</option>
         <option>Green</option>
         <option>Blue</option>
       </select>
-      <hr>
-      Font Style:<br>
-       <input type="checkbox" value=""> Bold<br>
-      <input type="checkbox" value=""> Italic<br>
-      <input type="checkbox" value=""> Underline<br>
-<hr>
-      Font Size:<br>
-      <input type="number">px<br>
-<hr>
+      <hr />
+      Font Style:<br />
+      <input type="checkbox" value="bold" id="b"/> Bold<br />
+      <input type="checkbox" value="italic" id="i"/> Italic<br />
+      <input type="checkbox" value="underline" id="u"/> Underline<br />
+      <hr />
+      Font Size:<br />
+      <input type="number" id="fSize"/>px<br />
+      <hr />
 
-<button class="btn btn-success">Apply</button>
+      <button class="btn btn-success" onclick="apply()">Apply</button>
     </div>
   </body>
 </html>
