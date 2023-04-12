@@ -1,0 +1,25 @@
+=> Jquery is a javascript library, which comes with different types of methods/function to speed up our javascript work.
+
+
+1. SELECTORS in JQUERY:
+
+var box = document.getElementById("box"); // js selector
+box.something.something
+
+$("#box").something.something
+
+
+// Primary Selectors - mostly used
+
+$("#box") - seletor by ID
+$(".box") - selector by CLASS
+$("div") - selector by ELEMENT/TAG
+------------------------------------
+
+2. Annonymous Function - A function without a name
+
+ex-
+
+funciton(){
+    //something
+}
