@@ -37,10 +37,17 @@
 <script lang="javascript">
 
 $("document").ready(function(){
+// $("p").hide();
 
-  $("H1").click(function(){
-      $(this).next().hide();
-  });
+    $("h1").click(function(){
+        // $(this).next().toggle();
+        // $(this).next().slideUp(3000);
+        // $(this).next().slideDown(3000);
+        // $(this).next().slideToggle(1000);
+        // $(this).next().fadeIn(1000);
+        // $(this).next().fadeOut(1000);
+        $(this).next().fadeToggle(1000);
+    });
 
 });
 

@@ -23,3 +23,11 @@ ex-
 funciton(){
     //something
 }
+
+---------------------------------------
+
+Jquery is all about
+    1. Selectors ex- $("#box")
+    2. methods ex- hide(), show()
+    3. events ex- click(), dblclick(), change()
+    4. Annonymous function

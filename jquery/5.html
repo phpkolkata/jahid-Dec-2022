@@ -38,9 +38,11 @@
 
 $("document").ready(function(){
 
-  $("H1").click(function(){
-      $(this).next().hide();
-  });
+    $("p").hide();
+
+    $("H1").click(function(){
+        $(this).next().show();
+    });
 
 });
 

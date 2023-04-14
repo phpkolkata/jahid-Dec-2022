@@ -7,7 +7,8 @@
     <title>Jquery version</title>
 </head>
 <body>
-    <h1>Heading 1</h1>
+    <h1 id="head1">Heading 1</h1>
+    <b>bold</b>
     <p>
       this is test para this is test para this is test para this is test para
       this is test para this is test para this is test para this is test para
@@ -16,7 +17,7 @@
       this is test para this is test para this is test para this is test para
       this is test para this is test para this is test para this is test para
       this is test para this is test para this is test para this is test para
-      this is test para this is test para
+      this is test para this is test para <b>bold</b>
     </p>
 
     <h1>Heading 2</h1>
@@ -24,13 +25,15 @@
       this is test para this is test para this is test para this is test para
       this is test para this is test para this is test para this is test para
       this is test para this is test para this is test para this is test para
-      this is test para this is test para this is test para this is test para
+      this is test para this is <b>bold</b> test para this is test para this is test para
       this is test para this is test para this is test para this is test para
       this is test para this is test para this is test para this is test para
       this is test para this is test para this is test para this is test para
       this is test para this is test para
     </p>
+<b>bold</b>
 
+<button id="btn">Click me</button>
     <!-- Jquery include-->
 <script src="jquery.js"></script>  
 
@@ -38,9 +41,10 @@
 
 $("document").ready(function(){
 
-  $("H1").click(function(){
-      $(this).next().hide();
-  });
+    $("#btn").click(function(){
+        // $("*").hide();
+        $("#head1,b").hide();
+    });
 
 });
 
