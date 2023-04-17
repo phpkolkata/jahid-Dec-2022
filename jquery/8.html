@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery version</title>
+
+    <style type="text/css">
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head1">Heading 1</h1>
+    <b>bold</b>
+    <p>
+      this is test para this is test para this is test para this is test para
+      this is test para this is test para this is test para this is test para
+      this is test para this is test para this is test para this is test para
+      this is test para this is test para this is test para this is test para
+      this is test para this is test para <b>bold</b>
+    </p>
+
+    <h1>Heading 2</h1>
+    <p>
+      this is test para this is test para this is test para this is test para
+      this is test para this is test para this is test para this is test para
+      this is test para this is test para this is test para this is test para
+      this is test para this is <b>bold</b> test para this is test para this is test para
+   
+    </p>
+<b>bold</b>
+
+<input type="text" value="">
+
+<img src="../img/images/1.jpg" height="200" width="200">
+
+
+<br>
+
+<button id="btn">Click me</button>
+    <!-- Jquery include-->
+<script src="jquery.js"></script>  
+
+<script lang="javascript">
+
+$("document").ready(function(){
+
+    $("#btn").click(function(){
+            // $("p:first").addClass("box1");     
+            // $("p:first").toggleClass("box1");     
+            // $("#head1").after("<div>testign</div>");     
+            // $("#head1").append("testign");     
+            // $("#head1").prepend("testign");   
+            // alert($("img").attr("height"));  
+            // $("img").attr("height", "400");  
+            // $("img").attr("src", "2.jpg"); 
+            
+            // $("h1").css("color", "#f00");
+            // $("body").empty();
+
+            // $("#head1").html("<span>test</span>");
+            // alert($("#head1").html());
+            // console.log($("#head1").html());
+
+            // $("img").removeAttr("height");
+            // $("img").removeAttr("width");
+
+            alert($(":text").val(22));
+    });
+
+});
+
+</script>
+
+</body>
+</html>
