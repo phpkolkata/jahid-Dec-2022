@@ -1,0 +1,9 @@
+- PHP is server side scripting language (it runs on server side (apache))
+more example - PHP, Python, java, ASP
+- html,css, js is client side scripting language (it runs on browser side)
+
+-XAMPP - which provide local server environment along with Mysql and Apache
+
+- localhost = d:/xampp/htdocs
+
+- localhost/phpkolkata/1.php = d:/xampp/htdocs/phpkolkata/1.php

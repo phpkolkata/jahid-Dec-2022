@@ -5,7 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- datepicker includes -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!-- datepicker includes ends -->
+
     <script>
+
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
         function hide1(){
             var p1 = document.getElementById("p1");
             p1.style.display = "none";
@@ -42,5 +54,7 @@
       this is test para this is test para this is test para this is test para
       this is test para this is test para
     </p>
+
+    <input type="text" id="datepicker">
   </body>
 </html>
