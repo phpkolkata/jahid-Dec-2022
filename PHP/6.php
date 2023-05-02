@@ -1,7 +1,7 @@
 <?php
 // php supports auto type casting
 $x = 10; // integer
-$x = "hello"; // string
+$x = "55hello"; // string
 
 echo $x;
 

@@ -1,0 +1,138 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.menuBarVisibility": "compact",
+  "window.titleBarStyle": "custom",
+  "files.associations": {
+    "*.js": "javascript",
+    "*.txt": "plaintext"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "JellyFish",
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.fontFamily": "'Fira Code iScript','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.minimap.enabled": false,
+  "workbench.startupEditor": "none",
+  "git.terminalAuthentication": false,
+  "todohighlight.keywords": [
+    {
+      "text": "note:",
+      "color": "yellow",
+      "backgroundColor": "grey",
+      "overviewRulerColor": "grey"
+    },
+    {
+      "text": "case:",
+      "color": "red",
+      "backgroundColor": "pink",
+      "overviewRulerColor": "grey"
+    },
+    {
+      "text": "hw:",
+      "color": "black",
+      "border": "0px solid red",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "white"
+      //other styling properties goes here ...
+    },
+    {
+      "text": "Topic:",
+      "color": "white",
+      "border": "0px solid red",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "blue"
+      //other styling properties goes here ...
+    },
+    {
+      "text": "ex:",
+      "color": "white",
+      "border": "0px solid red",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "green"
+      //other styling properties goes here ...
+    },
+    {
+      "text": "code:",
+      "color": "black",
+      "border": "0px solid red",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "#fb0"
+      //other styling properties goes here ...
+    },
+    {
+      "text": "-:",
+      "color": "black",
+      "border": "0px solid red",
+      "borderRadius": "50%", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "pink"
+      //other styling properties goes here ...
+    },
+    {
+      "text": "point:",
+      "color": "black",
+      "border": "1px solid gray",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "white"
+      //other styling properties goes here ...
+    },
+    {
+      "text": "solution:",
+      "color": "white",
+      "border": "1px solid gray",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "brown"
+      //other styling properties goes here ...
+    },
+    {
+      "text": "imp:",
+      "color": "black",
+      "border": "0px solid white",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "yellow"
+      //other styling properties goes here ...
+    }
+  ],
+  "explorer.compactFolders": false,
+
+  //for cursive code syntax
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+          "entity.other.attribute-name" // HTML Attributes
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.fontSize": 18,
+  "editor.formatOnPaste": true,
+  "todohighlight.defaultStyle": {
+  
+  }
+}

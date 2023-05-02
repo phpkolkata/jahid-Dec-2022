@@ -10,6 +10,7 @@
 // Variable - auto type casting
 
 $age = 10;
+// $age = "hello";
 
 // echo $x;
 print "Your age is <b>".$age."</b>";

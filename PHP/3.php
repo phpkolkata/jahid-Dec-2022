@@ -10,10 +10,10 @@
 
 // errors which stops execution of the script
 
-// 3. Parse Error (sever errors, stops execution) - 95%
+// 3. Parse Error (severe errors, stops execution) - 95%
     // syntax error, spelling mistakes, semocolon missing, bracket issue
 
-// 4. Fatal Error (sever errors, stops execution) - 5%
+// 4. Fatal Error (severe errors, stops execution) - 5%
     // logical errors
 
 
