@@ -105,3 +105,19 @@ function calc($v1, $v2, $act)
 
 echo calc(30, 40, "sub"); //+,add  -,sub  *,mul  /,div
 // echo calc(30, 40);  // default nature to add
+
+// Function with default parameter
+function calc2($v1, $v2, $act = "+")
+{
+    if ($act == "+") {
+        return $v1 + $v2;
+    } else if ($act == "-") {
+        return $v1 - $v2;
+    } else if ($act == "*") {
+        return $v1 * $v2;
+    } else if ($act == "/") {
+        return $v1 / $v2;
+    }
+}
+
+echo calc(30, 40, "sub"); //+,add  -,sub  *,mul  /,div
