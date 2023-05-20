@@ -3,10 +3,12 @@ function getTotal($m1, $m2, $m3)
 {
     return $m1 + $m2 + $m3;
 }
+
 function getAvg($total, $numberOfSub)
 {
     return $total / $numberOfSub;
 }
+
 function getResult($class, $avg)
 {
     if ($class <= 6) {
@@ -36,5 +38,46 @@ function getResult($class, $avg)
     } else {
         return "wrong Class";
     }
+}
 
+function getNumbers($limit, $type)
+{
+
+    $numbers = "";
+    if ($type == "odd") {
+        $numbers = "<h1>Odd Numbers under $limit</h1>";
+        for ($i = 1; $i <= $limit; $i++) {
+            if (($i % 2) != 0) {
+                $numbers .= "$i<br>";
+            }
+        }
+    } else {
+        $numbers = "<h1>Even Numbers under $limit</h1>";
+        for ($i = 1; $i <= $limit; $i++) {
+            if (($i % 2) == 0) {
+                $numbers .= "$i<br>";
+            }
+        }
+    }
+    return $numbers;
+}
+
+function getHtml($limit, $type)
+{
+    $html = "";
+    if ($type == "table") {
+        $html = "<table border='1'>";
+        for ($i = 1; $i <= $limit; $i++) {
+            $html .= "<tr><td>$i</td></tr>";
+        }
+        $html .= "</table>";
+    } else if ($type == "select") {
+        $html = "<select>";
+        for ($i = 1; $i <= $limit; $i++) {
+            $html .= "<option>$i</option>";
+        }
+        $html .= "</select>";
+    }
+
+    return $html;
 }
