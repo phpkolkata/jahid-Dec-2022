@@ -1,0 +1,30 @@
+div {
+  box-sizing: border-box;
+}
+.p10 {
+  padding: 10px;
+}
+.bdr {
+  border: 1px solid black;
+}
+.container {
+  height: 730px;
+}
+.header {
+  height: 150px;
+}
+
+.body {
+  height: 500px;
+}
+
+.rightBody {
+  float: right;
+  width: 80%;
+  height: 100%;
+}
+.leftBody {
+  float: left;
+  height: 100%;
+  width: 20%;
+}

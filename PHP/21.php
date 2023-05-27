@@ -4,10 +4,12 @@
 require "functions.php";
 
 $class = 5;
+
 $eng = 33;
 $math = 33;
 $sci = 33;
 $hin = 34;
+
 $geo = 47;
 
 $total = getTotal($eng, $math, $sci);

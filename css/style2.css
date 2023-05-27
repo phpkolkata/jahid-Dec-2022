@@ -1,0 +1,83 @@
+/* by class */
+.colorRed {
+  color: red;
+}
+.colorYellow {
+  color: yellow;
+}
+.bgBlack {
+  background-color: black;
+}
+.bgGreen {
+  background-color: green;
+}
+.p10 {
+  padding: 10px;
+}
+.p20 {
+  padding: 20px;
+}
+.m10 {
+  margin: 10px;
+}
+.m20 {
+  margin: 20px;
+}
+.bdr {
+  border: 1px solid black;
+}
+.f14 {
+  font-size: 14px;
+}
+.f20 {
+  font-size: 20px;
+}
+.w200 {
+  width: 200px;
+}
+.h200 {
+  height: 200px;
+}
+
+/* by Id css */
+
+#abc {
+  background-color: red;
+}
+
+/* by Tag/element css */
+body {
+  /* background-color: yellow; */
+}
+div {
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  border: 1px solid black;
+}
+/* b {
+  font-size: 30px;
+} */
+
+/* reference css */
+/* div > b {
+  font-size: 30px;
+} */
+
+/* .bdr > b {
+  font-size: 30px;
+} */
+
+.bdr b {
+  font-size: 30px;
+}
+
+/* parallel css */
+/* div,
+b,
+i,
+u,
+#abc,
+.bdr {
+  color: yellow;
+} */
