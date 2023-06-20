@@ -1,3 +1,12 @@
+
+<!-- <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul> -->
+
+
 <?php
 
 $weeks = array("sun", "mon", "tue", "wed", "thu", "fri", "sat");
@@ -12,6 +21,24 @@ $weeks = array("sun", "mon", "tue", "wed", "thu", "fri", "sat");
 // print $weeks[5];
 // print $weeks[6];
 
-for ($i = 0; $i <= 6; $i++) {
-    print $weeks[$i] . "<br>";
+// print "<ul>";
+// for ($i = 0; $i <= 6; $i++) {
+//     print "<li>" . $weeks[$i] . "</li>";
+// }
+// print "</ul>";
+
+print "<ul>";
+foreach ($weeks as $w) {
+    print "<li>" . $w . "</li>";
 }
+print "</ul>";
+
+// <ul>
+//     <li>sun</li>
+//     <li>mon</li>
+//     <li>tue</li>
+//     <li>wed</li>
+//     <li>thu</li>
+//     <li>fri</li>
+//     <li>sat</li>
+// </ul>
