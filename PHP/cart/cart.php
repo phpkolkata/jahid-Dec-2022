@@ -34,51 +34,51 @@ print_r($cart);
 			<th>Quantity</th>
 			<th>Total price</th>
 			<th colspan="3">Options</th>
-		
+
 		</tr>
     <?php
-    $grand = 0;
-    $sl = 0;
-        foreach($cart as $pid=>$qnty){
-            $sl++;
-            $price = rand(100,400);
-            $total = $price * $qnty;
-        $grand += $total;
+$grand = 0;
+$sl = 0;
+foreach ($cart as $pid => $qnty) {
+    $sl++;
+    $price = rand(100, 400);
+    $total = $price * $qnty;
+    $grand += $total;
     ?>
 
 	<tr>
 			<td align="center"><?php echo $sl ?></td>
-			<td align="center"><?php echo "product ".$pid ?></td>
+			<td align="center"><?php echo "product " . $pid ?></td>
 			<td align="center">₹<?php echo $price ?></td>
 			<td align="center"><?php echo $qnty ?></td>
 			<td align="center"><?php echo $total ?></td>
 
 			<td align="center">
-                <a href="addToCart.php?pid=<?php echo $pid?>&op=add" style="text-decoration:none;font-size:25px">
+                <a href="addToCart.php?pid=<?php echo $pid ?>&op=add" style="text-decoration:none;font-size:25px">
                 + </a>
             </td>
-			
+
 			<td align="center">
-                <a href="addToCart.php?pid=<?php echo $pid?>&op=del" style="text-decoration:none;font-size:25px">
+                <a href="addToCart.php?pid=<?php echo $pid ?>&op=del" style="text-decoration:none;font-size:25px">
                 - </a>
             </td>
 
 			<td align="center">
-                <a href="addToCart.php?pid=<?php echo $pid?>&op=rem" style="text-decoration:none;font-size:25px">
+                <a href="addToCart.php?pid=<?php echo $pid ?>&op=rem" style="text-decoration:none;font-size:25px">
                 x </a>
             </td>
 
 
 	</tr>
 <?php
-        }
+}
 ?>
     <tr>
 			<td colspan="4"> </td>
 			<td colspan="" align="center" style="font-weight: bold;font-size: 20px">Grand Total</td>
 			<td colspan="1" align="center" style="font-weight: bold;font-size: 20px">₹<?php echo $grand ?></td>
 			<td colspan="3"> </td>
-	
+
 </tr>
 </tbody>
 </table>

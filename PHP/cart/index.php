@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -71,10 +70,12 @@ session_start();
           </ul>
 
           <?php
-          $total = 0;
-          if(isset($_SESSION['cart']))
-          $total = count($_SESSION['cart']);
-          ?>
+$total = 0;
+if (isset($_SESSION['cart'])) {
+    $total = count($_SESSION['cart']);
+}
+
+?>
           <div class="me-5"><a href="cart.php">Cart [<?php echo $total ?>] item(s)</a></div>
         </div>
       </div>
@@ -94,7 +95,7 @@ session_start();
                   Some quick example text to build on the Product and make up
                   the bulk of the card's content.
                 </p>
-                <form action="add-to-cart.php" method="post">
+                <form action="add-to-cart.php?pid=1" method="post">
                     <input type="hidden" name="pid" value="1">
                     <div class="float-start w-50">Qnty: <input type="number" name="qnty" class="w-50 border border-primary rounded"></div>
                     <div class="float-end w-50"><button class="btn btn-success btn-sm float-end">Add Card</button></div>
