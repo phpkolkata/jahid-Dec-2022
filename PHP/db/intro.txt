@@ -1,6 +1,10 @@
 db - collection of tables
 table - collection of records
 
+
+primary - (not null, unique)
+
+
 mysql understand queries only
 
 Homework
