@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Name: <input type="text" id="nm" /><span id="msg"></span>
+    <br />
+    <button id="btn">click</button>
+
+    <!-- ----------------------------------- -->
+    <script src="../../jquery/jquery.js"></script>
+    <script lang="javascript">
+      $(document).ready(function(){
+          $("#btn").click(function(){
+            // alert("test"+ $("#nm").val());
+
+            $.ajax({
+                url:"checkNames.php",
+                method:"post",
+                data:{nm:$("#nm").val()},
+                success:function(res){
+                    $("#msg").html(res);
+                },
+                error:function(err){
+                    alert("ajax error occured");
+                }
+            });
+          })
+      });
+    </script>
+  </body>
+</html>

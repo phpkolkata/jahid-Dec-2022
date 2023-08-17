@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Sign Up</h1>    
+    <form>
+        email: <input type="text" id="email">@gmail.com <span id="msg"></span>
+        <br>
+        <button type="button" id="btn">check availablity</button>
+    </form>
+
+<script src="jquery.js"></script>
+<script lang="javascript">
+
+    $("document").ready(function(){
+        $("#email").keyup(function(){
+            
+            $.ajax({
+                url:'check-email.php',
+                method:'post',
+                data:{em:$("#email").val()},
+                success:function(res){
+                    // alert(res);
+                    if(res == 1){
+                        $("#msg").html("email already exits");
+                        $("#msg").css("color","red");
+                    }
+                    else{
+                        $("#msg").html("email can be used");
+                        $("#msg").css("color","green");
+                    }
+                },
+                error:function(err){
+                    console.log(err);
+                }
+            });
+
+        });
+    });
+
+</script>
+
+</body>
+</html>
