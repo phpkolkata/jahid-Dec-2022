@@ -1,12 +1,16 @@
 <?php
 
+// parant class
 class greet
 {
-    public $name = "abc";
+    // visiblity: public, protected, private
+    private $name = "abc";
+    public static $age = 20;
+
     public function hi()
     {
         // $this -> this is a special keyword, represent current class object
-        echo "hi - $this->name<br>";
+        echo "hi - " . $this->name . "your age is " . self::$age . "<br>";
     }
 
     public function hello()

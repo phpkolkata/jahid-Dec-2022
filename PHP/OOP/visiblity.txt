@@ -1,0 +1,7 @@
+                PUBLIC      PROTECTED       PRIVATE
+                ------------------------------------
+withinClass -    yes        yes             yes
+
+childClass  -    yes        yes             no
+
+outsideClass -   yes        no              no    
