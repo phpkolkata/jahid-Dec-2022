@@ -1,0 +1,12 @@
+- laravel is php framework, which is number one in current market
+- larave (framework) creates a discipline, so everyone can understand to code equally.
+- creates re-usablity
+- complex project can be handled by anyone who know laravel 
+- current laravel version 10
+- framework works on MVC pattern - Model View Controller
+    Model       - logical parts (db handling)
+    View        - html/css output (design handling)
+    Controller  - handles Model & View
+
+
+- laravel CLI(command line interface) - php artisan
