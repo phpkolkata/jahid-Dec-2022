@@ -21,3 +21,13 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('test');
 });
+
+Route::get('/pages/page1', function () {
+    // return view('pages/page1');
+    return view('pages.page1');
+});
+
+Route::get('/pages/page2', function () {
+    // return view('pages/page1');
+    return view('pages.page2');
+});
