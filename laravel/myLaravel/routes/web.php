@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
@@ -33,3 +34,13 @@ Route::get('pages/{age}/page3/', [PageController::class, 'page3']);
 
 Route::get('/form/entry', [FormController::class, 'entry']);
 Route::post('/form/submit', [FormController::class, 'submit'])->name('sb');
+
+// Route::get('/cateory/')
+// Route::get('/cateory/add')
+// Route::get('/cateory/store')
+// Route::get('/cateory/detail')
+// Route::get('/cateory/edit/33')
+// Route::get('/cateory/update/33')
+// Route::get('/cateory/delete/33')
+
+Route::resource('category', CategoryController::class);
