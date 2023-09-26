@@ -7,6 +7,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -17,8 +18,12 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
-        $db = DB::table('category')->get();
+        //Query builder
+        // $db = DB::table('category')->get();
+        $db = DB::table('category')->paginate(5);
+
+        // Eloquent
+        // $db = Category::all();
         return view('category.index', ["db" => $db]);
     }
 
@@ -39,8 +44,19 @@ class CategoryController extends Controller
     {
         //
         $data = $r->except('_token');
-        DB::table('category')->insert($data);
+        // Query Builder
+        // DB::table('category')->insert($data);
+
+        // EloquenT
+        // return "test";
+        // Category::insert($data);
+        $cat = new Category();
+        $cat->name = $data['name'];
+        $cat->is_active = $data['is_active'];
+        $cat->save();
+
         return redirect('/category');
+
     }
 
     /**

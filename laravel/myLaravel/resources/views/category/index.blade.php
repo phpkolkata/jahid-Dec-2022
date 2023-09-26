@@ -12,7 +12,7 @@
 
 
 <div class='mx-auto w-50 mt-5 mb-1 clearfix'>
-<a href='create' class='btn btn-primary float-end'>Add Category</a>
+<a href='/category/create' class='btn btn-primary float-end'>Add Category</a>
 </div>
 
 
@@ -40,6 +40,11 @@
 @endforeach
 
 </table>
+
+
+<div class='mx-auto w-50  mb-1 clearfix'>
+{{ $db->links() }}
+</
 
 </body>
 </html>
