@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<a href='/logout' class='btn btn-danger float-end'>Logout</a>
+
 
 <div class='mx-auto w-50 mt-5 mb-1 clearfix'>
 <a href='/category/create' class='btn btn-primary float-end'>Add Category</a>

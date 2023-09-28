@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,10 +28,16 @@ Route::get('/test', function () {
     return view('test');
 });
 
-Route::get('/pages/page1', [PageController::class, 'page1']);
-Route::get('/pages/page2', [PageController::class, 'page2']);
-Route::get('pages/page3', [PageController::class, 'page3']);
-Route::get('pages/{age}/page3/', [PageController::class, 'page3']);
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/login-check', [LoginController::class, 'attempt']);
+Route::get('/logout', [LoginController::class, 'logout']);
+
+Route::middleware(['auth'])->prefix('pages')->group(function () {
+    Route::get('/page1', [PageController::class, 'page1']);
+    Route::get('/page2', [PageController::class, 'page2']);
+    Route::get('/page3', [PageController::class, 'page3']);
+    Route::get('/{age}/page3/', [PageController::class, 'page3']);
+});
 
 Route::get('/form/entry', [FormController::class, 'entry']);
 Route::post('/form/submit', [FormController::class, 'submit'])->name('sb');
@@ -43,4 +50,4 @@ Route::post('/form/submit', [FormController::class, 'submit'])->name('sb');
 // Route::get('/cateory/update/33')
 // Route::get('/cateory/delete/33')
 
-Route::resource('category', CategoryController::class);
+Route::resource('category', CategoryController::class)->middleware('auth');
